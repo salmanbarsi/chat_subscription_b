@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "@apollo/server": "^5.0.0",
     "@as-integrations/express5": "^1.1.2",
