@@ -13,7 +13,7 @@ import { neon } from "@neondatabase/serverless";
 import dotenv from "dotenv";
 dotenv.config();
 
-const port = 5005;
+const port =  process.env.PORT || 5005;
 const client = neon(process.env.DATABASE_URL);
 const pubsub = new PubSub();
 const MESSAGE_SENT = "MESSAGE_SENT";
